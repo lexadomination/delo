@@ -1,0 +1,406 @@
+object Form1: TForm1
+  Left = 219
+  Height = 498
+  Top = 114
+  Width = 1058
+  Caption = 'Form1'
+  ClientHeight = 498
+  ClientWidth = 1058
+  OnCreate = FormCreate
+  LCLVersion = '1.0.14.0'
+  object DBNavigator1: TDBNavigator
+    Left = 24
+    Height = 25
+    Top = 144
+    Width = 225
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 225
+    DataSource = Datasource1
+    OnClick = DBNavigator1Click
+    Options = []
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 128
+    Top = 0
+    Width = 992
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'familia'
+        Width = 100
+        FieldName = 'familia'
+      end    
+      item
+        Title.Caption = 'name'
+        Width = 80
+        FieldName = 'name'
+      end    
+      item
+        Title.Caption = 'otchestvo'
+        Width = 100
+        FieldName = 'otchestvo'
+      end    
+      item
+        Title.Caption = 'ulica'
+        Width = 60
+        FieldName = 'ulica'
+      end    
+      item
+        Title.Caption = 'dom'
+        Width = 60
+        FieldName = 'dom'
+      end    
+      item
+        Title.Caption = 'kvartira'
+        Width = 60
+        FieldName = 'kvartira'
+      end    
+      item
+        Title.Caption = 'datarojdenia'
+        Width = 90
+        FieldName = 'datarojdenia'
+      end    
+      item
+        Title.Caption = 'oplata'
+        FieldName = 'oplata'
+      end    
+      item
+        Title.Caption = 'srokobuchenia'
+        Width = 90
+        FieldName = 'srokobuchenia'
+      end    
+      item
+        Title.Caption = 'pol'
+        Width = 60
+        FieldName = 'pol'
+      end>
+    DataSource = Datasource1
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 296
+    Height = 27
+    Top = 144
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object DBEdit2: TDBEdit
+    Left = 88
+    Height = 23
+    Top = 256
+    Width = 88
+    DataField = 'familia'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 135
+    TabOrder = 3
+  end
+  object DBEdit3: TDBEdit
+    Left = 88
+    Height = 23
+    Top = 296
+    Width = 86
+    DataField = 'name'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 135
+    TabOrder = 4
+  end
+  object DBEdit4: TDBEdit
+    Left = 90
+    Height = 23
+    Top = 344
+    Width = 88
+    DataField = 'otchestvo'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 135
+    TabOrder = 5
+  end
+  object Label2: TLabel
+    Left = 17
+    Height = 16
+    Top = 257
+    Width = 52
+    Caption = 'Фамилия'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 19
+    Height = 16
+    Top = 296
+    Width = 25
+    Caption = 'Имя'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 16
+    Top = 344
+    Width = 52
+    Caption = 'Отчество'
+    ParentColor = False
+  end
+  object DBEdit5: TDBEdit
+    Left = 296
+    Height = 23
+    Top = 208
+    Width = 80
+    DataField = 'ulica'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 135
+    TabOrder = 6
+  end
+  object DBEdit6: TDBEdit
+    Left = 296
+    Height = 23
+    Top = 250
+    Width = 80
+    DataField = 'dom'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 135
+    TabOrder = 7
+  end
+  object DBEdit7: TDBEdit
+    Left = 296
+    Height = 23
+    Top = 288
+    Width = 80
+    DataField = 'kvartira'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 135
+    TabOrder = 8
+  end
+  object DBEdit8: TDBEdit
+    Left = 296
+    Height = 23
+    Top = 337
+    Width = 80
+    DataField = 'datarojdenia'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 135
+    TabOrder = 9
+  end
+  object DBEdit9: TDBEdit
+    Left = 296
+    Height = 23
+    Top = 368
+    Width = 80
+    DataField = 'oplata'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 10
+  end
+  object DBEdit10: TDBEdit
+    Left = 296
+    Height = 23
+    Top = 408
+    Width = 80
+    DataField = 'srokobuchenia'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 135
+    TabOrder = 11
+  end
+  object DBEdit11: TDBEdit
+    Left = 296
+    Height = 23
+    Top = 448
+    Width = 80
+    DataField = 'pol'
+    DataSource = Datasource1
+    CharCase = ecNormal
+    MaxLength = 135
+    TabOrder = 12
+  end
+  object Label5: TLabel
+    Left = 232
+    Height = 16
+    Top = 215
+    Width = 35
+    Caption = 'Улица'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 232
+    Height = 16
+    Top = 248
+    Width = 25
+    Caption = 'Дом'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 232
+    Height = 16
+    Top = 288
+    Width = 52
+    Caption = 'Квартира'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 208
+    Height = 16
+    Top = 337
+    Width = 84
+    Caption = 'Дата рождения'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 235
+    Height = 16
+    Top = 375
+    Width = 41
+    Caption = 'Оплата'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 200
+    Height = 16
+    Top = 415
+    Width = 85
+    Caption = 'Срок обучения'
+    ParentColor = False
+  end
+  object Label11: TLabel
+    Left = 235
+    Height = 16
+    Top = 450
+    Width = 24
+    Caption = 'Пол'
+    ParentColor = False
+  end
+  object MySQL50Connection1: TMySQL50Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'delo'
+    KeepConnection = False
+    Password = '123456'
+    UserName = 'root'
+    CharSet = 'utf8'
+    HostName = 'localhost'
+    LogEvents = []
+    left = 832
+    top = 392
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'familia'
+        DataType = ftString
+        Precision = -1
+        Size = 135
+      end    
+      item
+        Name = 'name'
+        DataType = ftString
+        Precision = -1
+        Size = 135
+      end    
+      item
+        Name = 'otchestvo'
+        DataType = ftString
+        Precision = -1
+        Size = 135
+      end    
+      item
+        Name = 'ulica'
+        DataType = ftString
+        Precision = -1
+        Size = 135
+      end    
+      item
+        Name = 'dom'
+        DataType = ftString
+        Precision = -1
+        Size = 135
+      end    
+      item
+        Name = 'kvartira'
+        DataType = ftString
+        Precision = -1
+        Size = 135
+      end    
+      item
+        Name = 'datarojdenia'
+        DataType = ftString
+        Precision = -1
+        Size = 135
+      end    
+      item
+        Name = 'srokobuchenia'
+        DataType = ftString
+        Precision = -1
+        Size = 135
+      end    
+      item
+        Name = 'oplata'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'pol'
+        DataType = ftString
+        Precision = -1
+        Size = 135
+      end>
+    Active = True
+    Database = MySQL55Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from dekanat;'
+    )
+    Params = <>
+    left = 696
+    top = 312
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Action = caNone
+    Database = MySQL55Connection1
+    left = 776
+    top = 312
+  end
+  object Datasource1: TDatasource
+    DataSet = SQLQuery1
+    left = 848
+    top = 312
+  end
+  object MySQL55Connection1: TMySQL55Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'delo'
+    KeepConnection = False
+    Password = '123456'
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    CharSet = 'utf8'
+    HostName = 'localhost'
+    LogEvents = []
+    left = 904
+    top = 312
+  end
+end
